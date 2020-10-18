@@ -183,9 +183,7 @@ public class MainBotController extends TelegramLongPollingBot implements Runnabl
         String info = String.format(
                 "Сетевой статус - %s\n" +
                         "Статус занятости - %s\n" +
-                        "Рейтинг - 4.5\n" +
-                        "Заработано - \n" +
-                        "Заказов доставлено - ", user.isOnlineStatus() ? "Online" : "Offline",
+                        "Рейтинг - 4.5", user.isOnlineStatus() ? "Online" : "Offline",
                 user.isBusy() ? "Занят" : "Свободен");
         sm.setText(info);
         SendChatAction sc = new SendChatAction();
